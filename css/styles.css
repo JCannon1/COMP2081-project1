@@ -1,0 +1,104 @@
+/* Making the navbar and colouring it darkgrey */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change the link color lightgrey on hover */
+li a:hover {
+    background-color: lightgrey;
+}
+/* Making the active navbar links black */
+.active {
+    background-color: black;
+}
+/* Added Montserrat from Google Fonts */
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+/* Gave the background a linear gradient of red to black */
+body {
+    background: linear-gradient(to right, red, black);
+}
+/* Made the container be in the middle and made the background colour white */
+.container {
+    margin: auto;
+    width: 50%;
+    border: none;
+    padding: 10px;
+    background-color: white;
+}
+/* Made the automoblox images all the same size in the carousel  */
+#carouselAutomoblox img {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+/* CSS Grid Layout */
+#div {
+}
+.item-a9 {
+    background-color:white;
+    grid-area: a9;
+}
+.item-a9s {
+    background-color: white;
+    grid-area: a9s;
+}
+.item-c9 {
+    background-color: white;
+    grid-area: c9;
+}
+.item-c9r {
+    background-color: white;
+    grid-area: c9r;
+}
+.item-s9 {
+    background-color: white;
+    grid-area: s9;
+}
+/* Formating the CSS Grid layout at 70% width */
+.container {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: 200px;
+    grid-template-areas: 
+        "a9"
+        "a9s"
+        "c9"
+        "c9r"
+        "s9"
+        "footer";
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+/* Colour coding each cars colour */
+#collapseOne {
+    color: orange;
+}
+#collapseTwo {
+    color: grey;
+}
+#collapseThree {
+    color: red;
+}
+#collapseFour span {
+    color: red;
+}
+#collapseFive {
+    color: blue;
+}
